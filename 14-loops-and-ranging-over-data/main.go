@@ -3,9 +3,12 @@ package main
 import "fmt"
 
 func main() {
-	animals := []string{"dog", "fish", "cat", "bear", "cow", "horse"}
+	animals := make(map[string]string)
 
-	for _, animal := range animals {
-		fmt.Println(animal)
+	animals["dog"] = "Sheba"
+	animals["dog2"] = "Prince"
+
+	for animalType, animal := range animals {
+		fmt.Println(animalType, animal)
 	}
 }
