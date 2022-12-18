@@ -2,12 +2,26 @@ package main
 
 import "fmt"
 
+type User struct {
+	FirstName string
+	LastName  string
+}
+
 func main() {
-	myMap := make(map[string]int)
+	myMap := make(map[string]User)
 
-	myMap["First"] = 1
-	myMap["Second"] = 2
+	me := User{
+		FirstName: "Rae",
+		LastName:  "D.",
+	}
 
-	fmt.Println(myMap["First"], myMap["Second"])
+	myMap["me"] = me
+
+	fmt.Println(myMap["me"].FirstName, myMap["me"].LastName)
+
+	var myNewVar float32
+	myNewVar = 11.1
+
+	fmt.Println(myNewVar)
 
 }
