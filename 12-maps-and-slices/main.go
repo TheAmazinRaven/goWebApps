@@ -2,19 +2,13 @@ package main
 
 import (
 	"fmt"
-	"sort"
 )
 
 func main() {
-	var mySlice []int
+	numbers := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
 
-	mySlice = append(mySlice, 9)
-	mySlice = append(mySlice, 7)
-	mySlice = append(mySlice, 24)
+	fmt.Println(numbers)
 
-	fmt.Println(mySlice)
-
-	sort.Ints(mySlice)
-
-	fmt.Println(mySlice)
+	fmt.Println(numbers[0:2])
+	fmt.Println(numbers[6:9])
 }
