@@ -3,11 +3,11 @@ package main
 import "fmt"
 
 func main() {
-	myMap := make(map[string]string)
+	myMap := make(map[string]int)
 
-	myMap["dog"] = "Sheba"
-	myMap["other-dog"] = "Rusty"
+	myMap["First"] = 1
+	myMap["Second"] = 2
 
-	fmt.Println(myMap["dog"])
-	fmt.Println(myMap["other-dog"])
+	fmt.Println(myMap["First"], myMap["Second"])
+
 }
