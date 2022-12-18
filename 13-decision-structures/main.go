@@ -3,11 +3,11 @@ package main
 import "fmt"
 
 func main() {
-	isTrue := false
+	cat := "cat"
 
-	if isTrue {
-		fmt.Println("isTrue is", isTrue)
+	if cat == "cat" {
+		fmt.Println("Cat is equal to", cat)
 	} else {
-		fmt.Println("isTrue", isTrue)
+		fmt.Println("Cat is not cat, it is", cat)
 	}
 }
